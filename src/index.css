@@ -1,9 +1,51 @@
-
 .hole {
   background: url("/hole.png") no-repeat center/contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hole img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .mole {
   background-image: url("/mole.png");
 }
 
+body {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls > * {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  min-width: 140px;
+}
+
+.hole-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
